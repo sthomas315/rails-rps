@@ -1,7 +1,7 @@
-class newController < ApplicationController
+class NewController < ApplicationController
 
   def rock_move
-    @random_move = {"rock", "paper", "scissors"}.sample
+    @random_move = ["rock", "paper", "scissors"].sample
 
     if @random_move == "rock"
       @outcome = "tied"
@@ -16,7 +16,7 @@ class newController < ApplicationController
 
 
 def paper_move
-  @random_move_1 = {"rock", "paper", "scissors"}.sample
+  @random_move_1 = ["rock", "paper", "scissors"].sample
 
   if  @random_move_1 == "rock"
     @outcome_2 = "won"
@@ -31,7 +31,7 @@ end
 
 
 def scissors_move
-  @random_move_2 = {"rock", "paper", "scissors"}.sample
+  @random_move_2 = ["rock", "paper", "scissors"].sample
 
   if @random_move_2 == "rock"
     @outcome_3 = "lost"
