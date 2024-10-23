@@ -5,4 +5,6 @@ Rails.application.routes.draw do
 
   get("/scissors", {:controller=>"new", :action => "scissors_move"})
 
+  get("/", {:controller=>"new", :action => "homepage"})
+
 end
