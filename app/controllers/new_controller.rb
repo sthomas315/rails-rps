@@ -5,9 +5,9 @@ class NewController < ApplicationController
 
     if @random_move == "rock"
       @outcome = "tied"
-  elsif @comp_move == "paper"
+  elsif @random_move == "paper"
       @outcome = "lost"
-  elsif @comp_move == "scissors"
+  elsif @random_move == "scissors"
       @outcome = "won"
   end
 
